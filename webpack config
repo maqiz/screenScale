@@ -1,0 +1,51 @@
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const cleanWebpackPlugin = require('clean-webpack-plugin');
+module.exports = {
+	entry : __dirname + '/src/main.js',
+	output : {
+		path : path.resolve(__dirname,'dist/'),
+		filename : 'assets/js/[name]-[hash].js',
+		publicPath: ''
+	},
+	plugins : [
+		new htmlWebpackPlugin({
+			filename : 'index.html',
+			template : './src/index.html'
+		}),
+		new cleanWebpackPlugin(['dist'])
+	],
+	devServer : {
+		open : true,
+		port : 9000,
+		contentBase : 'dist/',
+		publicPath : '/'
+	},
+	module : {
+		rules : [
+			{
+				test : /\.css$/,
+				use :[ 'style-loader',
+					{
+						loader : 'css-loader',
+						options : {
+							module : true,
+							name : '[name]-[hash:2]'
+						}
+					
+					}
+				]
+			},
+			{
+				test : /\.(png|jpg)$/,
+				use :[{
+					loader : 'url-loader',
+					options : {
+						limit :10,
+						name : 'assets/img/[name]-[hash:8].[ext]'
+					}
+				}]
+			}
+		]
+	}
+}
