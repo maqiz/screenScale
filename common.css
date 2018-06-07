@@ -1,0 +1,385 @@
+/*高德地图*/
+.amap-logo img,
+.amap-copyright {
+	display: none !important;
+}
+
+/*title*/
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+h5 {
+	font-size: 28px;
+}
+
+h6 {
+	font-size: 26px;
+}
+
+.icon{display: inline-block;width: 48px;height: 48px;background-repeat: no-repeat;background-size: 100% 100%;background-position: center center;}
+/*button*/
+
+.ez-button {
+	display: block;
+	outline: 0 none;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	padding: 0;
+	text-align: center;
+	font-size: 32px;
+	height: 96px;
+	line-height: 96px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	white-space: nowrap;
+	color: #333;
+	background-color: #fff;
+	border: 1PX solid #e5e5e5;
+	border-radius: 5px;
+}
+
+.ez-button-inline {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.ez-button-small {
+	font-size: 26px;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 30px;
+}
+
+.ez-button-primary {
+	color: #fff;
+	background-color: #30a6e6;
+	border: 1px solid #30a6e6;
+}
+
+.ez-button-warning {
+	color: #fff;
+	background-color: #F14D4D;
+	border: 1px solid #F14D4D;
+}
+
+.ez-button.ez-button-disabled {
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 0.6;
+}
+
+.ez-button-ghost {
+	color: #30a6e6;
+	background-color: transparent;
+	border: 1PX solid #30a6e6;
+	border-radius: 5px;
+}
+
+.foot-btn{
+	position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+}
+
+
+/* flexbox */
+
+.flexbox {
+	text-align: left;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.flexbox.flexbox-dir-row {
+	flex-direction: row;
+}
+
+.flexbox.flexbox-dir-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flexbox.flexbox-dir-column {
+	flex-direction: column;
+}
+
+.flexbox.flexbox-dir-column-reverse {
+	flex-direction: column-reverse;
+}
+
+.flexbox.flexbox-nowrap {
+	flex-wrap: nowrap;
+}
+
+.flexbox.flexbox-wrap {
+	flex-wrap: wrap;
+}
+
+.flexbox.flexbox-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.flexbox.flexbox-justify-start {
+	justify-content: flex-start;
+}
+
+.flexbox.flexbox-justify-end {
+	justify-content: flex-end;
+}
+
+.flexbox.flexbox-justify-center {
+	justify-content: center;
+}
+
+.flexbox.flexbox-justify-between {
+	justify-content: space-between;
+}
+
+.flexbox.flexbox-justify-around {
+	justify-content: space-around;
+}
+
+.flexbox.flexbox-align-start {
+	align-items: flex-start;
+}
+
+.flexbox.flexbox-align-end {
+	align-items: flex-end;
+}
+
+.flexbox.flexbox-align-center {
+	align-items: center;
+}
+
+.flexbox.flexbox-align-stretch {
+	align-items: stretch;
+}
+
+.flexbox.flexbox-align-baseline {
+	align-items: baseline;
+}
+
+.flexbox.flexbox-align-content-start {
+	align-content: flex-start;
+}
+
+.flexbox.flexbox-align-content-end {
+	align-items: flex-end;
+}
+
+.flexbox.flexbox-align-content-center {
+	align-items: center;
+}
+
+.flexbox.flexbox-align-content-between {
+	align-items: stretch;
+}
+
+.flexbox.flexbox-align-content-around {
+	align-items: baseline;
+}
+
+.flexbox.flexbox-align-content-stretch {
+	align-items: baseline;
+}
+
+.flexbox .flexbox-item {
+	box-sizing: border-box;
+	flex: 1;
+}
+.flexbox .flexbox-align-self-start{
+	align-self: flex-start;
+}
+
+
+/*float and marign*/
+
+.text-line {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.newline {
+    /* 英文情况换行 */
+    word-wrap:break-word;
+    word-break:break-all;
+    /* 多行文本溢出省略 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+	zoom: 1;
+}
+
+.pd-lr-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pd-tb-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pd-20 {
+	padding: 20px;
+}
+.pd-10 {
+	padding: 10px;
+}
+
+.pd-lr-20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pd-tb-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pd-l-20{
+	padding-left: 20px;
+}
+
+.pd-b-88{
+    padding-bottom: 88px;
+}
+
+.ml-5 {
+	margin-left: 5px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mr-5 {
+	margin-right: 5px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-20 {
+	margin-right: 20px;
+}
+
+.text-c {
+	text-align: center;
+}
+
+.text-r {
+	text-align: right;
+}
+
+
+/*color*/
+
+.font-color,.font-color-blue {
+	color: #30a6e6;
+}
+
+.font-color-f {
+	color: #fff;
+}
+
+.font-color-greed {
+	color: #00b38d;
+}
+
+.font-color-red {
+	color: #f14d4d;
+}
+
+
+/*background-color*/
+
+.bc-color,
+.bc-color-blue {
+	background-color: #30a6e6;
+}
+
+.bc-color-f {
+	background-color: #fff;
+}
+
+.bc-color-greed {
+	background-color: #00b38d;
+}
+
+.bc-color-red {
+	background-color: #f14d4d;
+}
+
+/*line*/
+
+.level:before {
+	display: block;
+	content: '' !important;
+	height: 0;
+	width: 100%;
+	border-top: 1px solid #e5e5e5;
+	transform: scaleY(0.5);
+	transform-origin: 50% 100%;
+}
+
+.vertical:before {
+	display: block;
+	content: '' !important;
+	height: 100%;
+	width: 0;
+	border-left: 1px solid #e5e5e5;
+	transform: scaleX(0.5);
+	transform-origin: 100% 50%;
+}
+.border{
+	border: 1px solid #E5E5E5;
+}
