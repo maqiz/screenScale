@@ -5,6 +5,7 @@ var  screenWidth = window.screen.availWidth || document.documentElement.clientWi
      document.documentElement.style.fontSize = fontSize + "px";
 
 #防抖
+
 function debounce(fn, wait, immediate) {
     let timer = null
 
@@ -24,6 +25,7 @@ function debounce(fn, wait, immediate) {
 }
 
 #节流
+
 function throttle(fn, wait, immediate) {
     let timer = null
     let callNow = immediate
