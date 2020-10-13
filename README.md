@@ -145,3 +145,9 @@ function throttle(fn, wait, immediate) {
             throw new Error(error)
         }
     }
+    
+    /* 向内凹的圆 */
+    background: radial-gradient(50px at left top,transparent 50%,#fff 50%) top left / 50% 50% no-repeat,
+                    radial-gradient(50px at right top,transparent 50%,#fff 50%) top right /50% 50% no-repeat,
+                    radial-gradient(50px at left bottom,transparent 50%,#fff 50%) left bottom / 50% 50% no-repeat,
+                    radial-gradient(50px at right bottom,transparent 50%,#fff 50%) right bottom / 50% 50% no-repeat,
